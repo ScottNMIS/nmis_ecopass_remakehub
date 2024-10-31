@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
     Database,
     Factory,
@@ -315,8 +316,10 @@ const DataMappingVisual = () => {
 };
 
 const AboutNMIS = () => {
+    const navigate = useNavigate();
+
     const handleMarketplaceClick = () => {
-        window.location.href = '/marketplace';
+        navigate('/marketplace');
     };
 
     return (

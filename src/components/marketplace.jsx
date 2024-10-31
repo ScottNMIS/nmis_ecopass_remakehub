@@ -113,6 +113,8 @@ const Marketplace = () => {
     const [selectedCategory, setSelectedCategory] = useState('All');
     const [isSearchVisible, setIsSearchVisible] = useState(false);
 
+
+
     const categories = ['All', 'Industrial Equipment', 'Automotive', 'Energy Systems', 'Machinery'];
 
     useEffect(() => {
