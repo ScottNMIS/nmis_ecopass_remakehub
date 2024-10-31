@@ -13,7 +13,7 @@ const Homepage = () => {
                     <div className="flex justify-center mb-8">
                         <div className="bg-white/95 p-4 rounded-xl shadow-lg">
                             <img
-                                src={"src/assets/nmis-logo_transparent.png"}
+                                src={"public/assets/nmis-logo_transparent.png"}
                                 alt="National Manufacturing Institute Scotland Logo"
                                 className="w-40 h-auto"
                             />
@@ -81,7 +81,7 @@ const Homepage = () => {
             <section
                 className="relative bg-cover bg-center p-16 rounded-xl shadow-2xl text-white min-h-[500px] flex items-center"
                 style={{
-                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("src/assets/nmis-background.jpg")`
+                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("public/assets/nmis-background.jpg")`
                 }}
 
             >

@@ -41,7 +41,7 @@ const HowdenProfile = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-col sm:flex-row items-center gap-8">
                         <img
-                            src="src/assets/howden-logo.jpg"
+                            src="../../public/assets/howden-logo.jpg"
                             alt="Howden Compressors Logo"
                             className="w-32 h-32 rounded-xl bg-white p-4 shadow-lg transition-transform hover:scale-105"
                         />
@@ -155,7 +155,7 @@ const HowdenProfile = () => {
                             <CardContent>
                                 <div className="aspect-video bg-gray-100 rounded-lg mb-6 overflow-hidden">
                                     <img
-                                        src="src/assets/howden-portal.png"
+                                        src="../../public/assets/howden-portal.png"
                                         alt="Howden ReMake Portal Interface"
                                         className="w-full h-full object-cover rounded-lg transition-transform hover:scale-105"
                                     />
