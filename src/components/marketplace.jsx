@@ -10,7 +10,7 @@ const companies = [
         category: "Industrial Equipment",
         remanufacturableProducts: 12,
         sustainabilityScore: 92,
-        image: "public/assets/howden-logo.jpg",
+        image: "assets/howden-logo.jpg",
         isReal: true
     },
     ...Array(1).fill(null).map((_, index) => ({
@@ -20,7 +20,7 @@ const companies = [
         category: ["Industrial Equipment", "Automotive", "Energy Systems", "Machinery"][index % 4],
         remanufacturableProducts: Math.floor(Math.random() * 20) + 1,
         sustainabilityScore: Math.floor(Math.random() * 30) + 70,
-        image: "public/assets/nmis-background.jpg",
+        image: "assets/nmis-background.jpg",
         isReal: false
     }))
 ];

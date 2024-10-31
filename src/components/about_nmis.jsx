@@ -222,7 +222,7 @@ const DataMappingVisual = () => {
                         {/* NMIS Logo with White Background */}
                         <div className="bg-white rounded-md p-2 mb-4">
                             <img
-                                src="../../public/assets/nmis-logo_transparent.png"
+                                src="../../assets/nmis-logo_transparent.png"
                                 alt="NMIS Logo"
                                 className="w-24 h-auto"
                             />
