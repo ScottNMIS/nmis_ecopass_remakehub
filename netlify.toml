@@ -1,15 +1,15 @@
-# netlify.toml
 [build]
   functions = "netlify/functions"
 
 [[redirects]]
-  # Redirect to the resolve function for GS1 Digital Link paths with product and identifiers
+  # Redirect for paths starting with /product/01/... and pass all query parameters to the serverless function
   from = "/product/01/*"
   to = "/.netlify/functions/resolve"
   status = 200
+  query = {path = ":splat"}
 
 [[redirects]]
-  # Catch-all redirect for client-side routing to handle SPA routes like /MESDashboard
+  # Catch-all redirect for SPA client-side routing, allowing query parameters to pass to the front end
   from = "/*"
   to = "/index.html"
   status = 200
