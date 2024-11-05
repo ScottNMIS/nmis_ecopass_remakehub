@@ -1,0 +1,15 @@
+# netlify.toml
+[build]
+  functions = "netlify/functions"
+
+[[redirects]]
+  # Redirect to the resolve function for GS1 Digital Link paths with product and identifiers
+  from = "/product/01/*"
+  to = "/.netlify/functions/resolve"
+  status = 200
+
+[[redirects]]
+  # Catch-all redirect for client-side routing to handle SPA routes like /MESDashboard
+  from = "/*"
+  to = "/index.html"
+  status = 200
