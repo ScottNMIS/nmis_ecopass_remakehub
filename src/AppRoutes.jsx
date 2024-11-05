@@ -14,14 +14,17 @@ import MESDashboard from './components/MESDashboard.jsx';  // Import AboutNMIS c
 import MESHome from './components/MESHome.jsx';  // Import AboutNMIS component
 import DesignPage from './components/DesignPage.jsx';  // Import AboutNMIS component
 import InitialisationPage from './components/Initialisation.jsx';  // Import AboutNMIS component
+import ProductPassport from './components/ProductPassport.jsx';  // Import AboutNMIS component
 import ScrollToTop from './ScrollToTop';
+
+//                <Route path="/" element={<Navigate to="/InitialisationPage" replace />} />
 
 const AppRoutes = () => {
     return (
         <>
             <ScrollToTop />
             <Routes>
-                <Route path="/" element={<Navigate to="/InitialisationPage" replace />} />
+
 
                 {/* Public Routes */}
             <Route path="/" element={<DPPHome />} />
@@ -35,6 +38,7 @@ const AppRoutes = () => {
                 <Route path="/DashboardHomepage" element={<DPPHomepage />} />
                 <Route path="/InitialisationPage" element={<InitialisationPage />} />
                 <Route path="/DesignPage" element={<DesignPage />} />
+                <Route path="/product/:ai/:gtin/:qualifier/:serial" element={<ProductPassport />} />
             {/* Protected Routes */}
             <Route
                 path="/advanced-data"
